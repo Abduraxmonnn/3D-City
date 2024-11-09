@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Scenes/SimplePoly City - Low Poly Assets_Demo Scene.unity
+    path: Assets/_Scenes/Main.unity
     guid: 444c3572d23d74ebc81232a6b8882624
   m_configObjects: {}
