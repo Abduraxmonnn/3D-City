@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
 
         // Move the car using Rigidbody
         Vector3 movement = transform.forward * speed * forwardInput * Time.deltaTime;
+        rb.AddForce(movement * Time.deltaTime, ForceMode.Acceleration);
         rb.MovePosition(rb.position + movement);
         Quaternion turnRotation = Quaternion.Euler(0f, horizontalInput * turnSpeed * Time.deltaTime, 0f);
         rb.MoveRotation(rb.rotation * turnRotation);
